@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/local/bin/fpc" Date="1590953228"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -k-framework -kCocoa -l -vewnhibq -Fi/Users/wbabcock/Documents/Notepascal/lib/x86_64-darwin -Fu/Users/wbabcock/Documents/Notepascal/src -Fu/Users/wbabcock/.lazarus/lib/Printer4Lazarus/lib/x86_64-darwin/cocoa -Fu/Users/wbabcock/.lazarus/lib/cairocanvas_pkg/lib/x86_64-darwin/cocoa -Fu/Users/wbabcock/.lazarus/lib/units/x86_64-darwin/cocoa -Fu/Applications/Lazarus/lcl/units/x86_64-darwin -Fu/Applications/Lazarus/components/lazutils/lib/x86_64-darwin -Fu/Applications/Lazarus/packager/units/x86_64-darwin -Fu/Users/wbabcock/Documents/Notepascal/ -FU/Users/wbabcock/Documents/Notepascal/lib/x86_64-darwin/ -FE/Users/wbabcock/Documents/Notepascal/ -o/Users/wbabcock/Documents/Notepascal/Notepascal -dLCL -dLCLcocoa Notepascal.lpr"/>
+</CONFIG>

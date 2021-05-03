@@ -1,0 +1,192 @@
+object frmMain: TfrmMain
+  Left = 253
+  Height = 600
+  Top = 116
+  Width = 800
+  Caption = 'Notepascal'
+  ClientHeight = 600
+  ClientWidth = 800
+  Menu = mainMenu
+  Position = poDesktopCenter
+  LCLVersion = '2.0.12.0'
+  object mDocument: TMemo
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 800
+    Align = alClient
+    Lines.Strings = (    )
+    OnChange = mDocumentChange
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object mainMenu: TMainMenu
+    Left = 108
+    Top = 118
+    object mnuFile: TMenuItem
+      Caption = '&File'
+      object mnuFileNew: TMenuItem
+        Action = actFileNew
+      end
+      object mnuFileOpen: TMenuItem
+        Action = actFileOpen
+      end
+      object mnuFileSave: TMenuItem
+        Action = actSave
+      end
+      object mnuFileSaveAs: TMenuItem
+        Action = actFileSaveAs
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object mnuFilePageSetup: TMenuItem
+        Caption = 'Page Setup'
+        OnClick = mnuFilePageSetupClick
+      end
+      object mnuFilePrint: TMenuItem
+        Action = actFilePrint
+        ShortCut = 16464
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object mnuFileExt: TMenuItem
+        Action = actFileExit
+      end
+    end
+    object mnuEdit: TMenuItem
+      Caption = '&Edit'
+      object mnuEditCut: TMenuItem
+        Action = actEditCut
+      end
+      object mnuEditCopy: TMenuItem
+        Action = actEditCopy
+      end
+      object mnuEditPaste: TMenuItem
+        Action = actEditPaste
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object mnuEditSelectAll: TMenuItem
+        Action = actEditSelectAll
+      end
+      object mnuEditDelete: TMenuItem
+        Action = actEditDelete
+      end
+    end
+    object mnuFormat: TMenuItem
+      Caption = 'Format'
+      object mnuFormatWordWrap: TMenuItem
+        Action = actFormatWordWrap
+      end
+      object mnuFormatFontEdit: TMenuItem
+        Action = actFontEdit
+      end
+    end
+    object mnuHelp: TMenuItem
+      Caption = 'Help'
+      object mnuHelpAbout: TMenuItem
+        Caption = 'About'
+        OnClick = mnuHelpAboutClick
+      end
+    end
+  end
+  object actionList: TActionList
+    Left = 104
+    Top = 192
+    object actFileNew: TAction
+      Category = 'File'
+      Caption = '&New ...'
+      OnExecute = actFileNewExecute
+    end
+    object actEditCut: TEditCut
+      Category = 'Edit'
+      Caption = 'Cu&t'
+      Hint = 'Cut'
+      ShortCut = 16472
+    end
+    object actEditCopy: TEditCopy
+      Category = 'Edit'
+      Caption = '&Copy'
+      Hint = 'Copy'
+      ShortCut = 16451
+    end
+    object actEditPaste: TEditPaste
+      Category = 'Edit'
+      Caption = '&Paste'
+      Hint = 'Paste'
+      ShortCut = 16470
+    end
+    object actEditSelectAll: TEditSelectAll
+      Category = 'Edit'
+      Caption = 'Select &All'
+      Hint = 'Select All'
+      ShortCut = 16449
+    end
+    object actEditDelete: TEditDelete
+      Category = 'Edit'
+      Caption = '&Delete'
+      Hint = 'Delete'
+      ShortCut = 46
+    end
+    object actFileOpen: TFileOpen
+      Category = 'File'
+      Caption = '&Open ...'
+      Dialog.DefaultExt = '.txt'
+      Hint = 'Open'
+      ShortCut = 16463
+      OnAccept = actFileOpenAccept
+    end
+    object actSave: TAction
+      Category = 'File'
+      Caption = 'Save'
+      OnExecute = actSaveExecute
+    end
+    object actFileSaveAs: TFileSaveAs
+      Category = 'File'
+      Caption = 'Save &As ...'
+      Dialog.DefaultExt = '.txt'
+      Dialog.Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+      Hint = 'Save As'
+      ShortCut = 16467
+      OnAccept = actFileSaveAsAccept
+    end
+    object actFileExit: TFileExit
+      Category = 'File'
+      Caption = 'E&xit'
+      Hint = 'Exit'
+    end
+    object actFormatWordWrap: TAction
+      Category = 'Format'
+      Caption = 'Word wrap'
+      Checked = True
+      OnExecute = actFormatWordWrapExecute
+    end
+    object actFontEdit: TFontEdit
+      Category = 'Format'
+      Caption = 'Select &Font ...'
+      Dialog.MinFontSize = 0
+      Dialog.MaxFontSize = 0
+      Dialog.Options = [fdEffects, fdApplyButton]
+      Dialog.PreviewText = 'This is a sample text'
+      Hint = 'Font Select'
+      BeforeExecute = actFontEditBeforeExecute
+      OnAccept = actFontEditAccept
+    end
+    object actFilePrint: TAction
+      Category = 'File'
+      Caption = 'Print'
+      OnExecute = actFilePrintExecute
+    end
+  end
+  object dlgPrint: TPrintDialog
+    Left = 104
+    Top = 272
+  end
+  object dlgPageSetup: TPageSetupDialog
+    Left = 107
+    Top = 353
+  end
+end

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.0\bin\x86_64-win64\fpc.exe" Date="1381340986"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -WG -l -vewnhibq -FiC:\Users\wbabcock\Desktop\Notepascal\lib\x86_64-win64 -FuC:\Users\wbabcock\Desktop\Notepascal\src -FuC:\lazarus\components\printers\lib\x86_64-win64\win32 -FuC:\lazarus\components\cairocanvas\lib\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 -FuC:\Users\wbabcock\Desktop\Notepascal\ -FUC:\Users\wbabcock\Desktop\Notepascal\lib\x86_64-win64\ -FEC:\Users\wbabcock\Desktop\Notepascal\ -oC:\Users\wbabcock\Desktop\Notepascal\Notepascal.exe -dLCL -dLCLwin32 Notepascal.lpr"/>
+</CONFIG>
